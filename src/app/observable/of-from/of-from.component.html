@@ -1,0 +1,50 @@
+<div class="my-3">
+  <h2>Of and from</h2>
+  <strong>Ex -01 (Of)</strong>
+
+  <div class="row">
+    <div class="col-md-6">
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong> Data: </strong> of('Anup', 'Shekhar', 'Sharma')
+      </p>
+      <ul id="elContainer6"></ul>
+    </div>
+    <div class="col-md-6">
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong> Data: </strong> of( &#123; a: 'Anup', b: 'Shekhar', c: 'Sharma'
+        &#125; )
+      </p>
+      <ul id="elContainer7">
+        <li>{{ obsMsg.a }}</li>
+        <li>{{ obsMsg.b }}</li>
+        <li>{{ obsMsg.c }}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex -02 (From)</strong>
+      <br />
+      <strong>Array to observable convertion</strong>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong> Data: </strong> From('User', 'Sender', 'Receiver')
+      </p>
+      <ul id="elContainer8"></ul>
+    </div>
+    <br />
+    <div class="col-md-4">
+      <strong>Promise to observable convertion</strong>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong> Data: </strong> Promise to observable convertion
+      </p>
+      <ul id="elContainer9"></ul>
+    </div>
+    <div class="col-md-4">
+      <strong>String to observable convertion</strong>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong> Data: </strong> String to observable
+      </p>
+      <ul id="elContainer10"></ul>
+    </div>
+  </div>
+</div>

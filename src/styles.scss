@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+.row {
+  margin: 0;
+  .techList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 8px 13px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.completed {
+  color: rgb(19, 32, 0);
+
+  li {
+    border: 1px solid green !important;
+    background-color: rgb(184, 239, 103) !important;
+  }
+}
+
+.err {
+  color: rgb(241, 7, 7);
+
+  li {
+    border: 1px solid rgb(86, 3, 3) !important;
+    background-color: rgb(251, 131, 131) !important;
+  }
+}

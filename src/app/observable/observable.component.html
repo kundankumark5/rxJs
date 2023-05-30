@@ -1,0 +1,26 @@
+<!-- * Observable stream is created using
+  - user input (button click event)
+  - http request
+  - array
+  - object
+  - interval(delay)
+  - timer(due, delay) : it's as same as interval except it takes two arg first due in milisecond to wait for emitting and second one is   delay each emit is with that delay
+  - Of from : it converts the arguments to an observable sequnce of(1,2,3), while in 'from' we can create observable stream either from an array , an array like object , a promise , an iterable obj or an observable like object
+  -toArray : stote all streams and convert them into an array
+    // (Manual observable) : using create to create manual observable and observer.error to show err and observer.complete to stop emmiting
+  -
+* observable handles(if subscribed)
+  - Data
+  - Error
+  - Completion
+
+  as .subscribe(
+    (data)=>console.log(data),
+    (error)=>console.log(error),
+    ()=>console.log('complete')
+  ) -->
+<div class="my-3">
+  <h2>Observable</h2>
+</div>
+
+<router-outlet> </router-outlet>
