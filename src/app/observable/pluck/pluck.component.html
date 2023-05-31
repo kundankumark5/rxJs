@@ -1,0 +1,41 @@
+<div class="my-3">
+  <h4>Map</h4>
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Ex-01 converted stream to array using toArray</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Pluck:By property</strong> Data => pluck('keyName')
+      </p>
+      <br />
+      <p>Message <strong class="text-success"></strong></p>
+
+      <table>
+        <tr>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of data">
+          <td>{{ item }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <strong>Ex-02 converted stream to array using toArray</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Pluck:By Nested property</strong> Data => pluck('nested key''value in key')
+      </p>
+      <br />
+      <p>Message <strong class="text-success"></strong></p>
+
+      <table>
+        <tr>
+          <th>Job Title</th>
+        </tr>
+        <tr *ngFor="let item of data1">
+          <td>{{ item }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

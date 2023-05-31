@@ -1,5 +1,6 @@
 .list {
   display: flex;
+flex-wrap: wrap;
   gap: 10px;
   .box {
     height: 150px;
@@ -9,4 +10,10 @@
     cursor: pointer;
     display: block;
   }
+}
+
+.row{
+
+margin-left: 0;
+margin-right: 0;
 }

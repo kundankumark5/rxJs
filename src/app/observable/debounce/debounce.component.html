@@ -1,0 +1,61 @@
+<div class="my-3">
+  <h4>Debounce and Distinct Until Changed Operator</h4>
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex-01 <span class="text-primary">Debounce Time</span></strong>
+
+      <br />
+      <br />
+      <div class="form-group row">
+        <label
+          for="colFormLabelLg"
+          class="col-sm-2 col-form-label col-form-label-lg"
+          >Search</label
+        >
+        <div class="col-sm-10">
+          <input
+            type="text"
+            id="colFormLabelLg"
+            #myInput
+            class="form-control form-control-lg"
+            placeholder="Search..."
+          />
+        </div>
+      </div>
+<br>
+
+      <span *ngIf="reqData != null"
+        >Requested Data :
+        <strong class="text-success">{{ reqData }}</strong></span
+      >
+    </div>
+   <div class="col-md-4">
+      <strong>Ex-02 <span class="text-warning">Distinct Until Change</span></strong>
+
+      <br />
+      <br />
+      <div class="form-group row">
+        <label
+          for="colFormLabelLg1"
+          class="col-sm-2 col-form-label col-form-label-lg"
+          >Search</label
+        >
+        <div class="col-sm-10">
+          <input
+            type="text"
+            id="colFormLabelLg1"
+            #myInput2
+            class="form-control form-control-lg"
+            placeholder="Search..."
+          />
+        </div>
+      </div>
+<br>
+
+      <span *ngIf="reqData2 != null"
+        >Requested Data :
+        <strong class="text-success">{{ reqData2   }}</strong></span
+      >
+    </div>
+  </div>
+</div>

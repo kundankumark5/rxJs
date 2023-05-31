@@ -6,10 +6,22 @@
   - interval(delay)
   - timer(due, delay) : it's as same as interval except it takes two arg first due in milisecond to wait for emitting and second one is   delay each emit is with that delay
   - Of from : it converts the arguments to an observable sequnce of(1,2,3), while in 'from' we can create observable stream either from an array , an array like object , a promise , an iterable obj or an observable like object
-  -toArray : stote all streams and convert them into an array
+  - toArray : stote all streams and convert them into an array
     // (Manual observable) : using create to create manual observable and observer.error to show err and observer.complete to stop emmiting
-  -
+  - pluck operator : provide us requested property of an object
+  - Tap/Do operator : transparently perform action or side effects such as logging
+  - Take(no): returns specified no of streams from starting , Takelast(no):returns specified no of Streams from last  and Take Untill operator : we can take desired no of streams using take
+  - Retry operator, RetryWhen, Scan, Delay operators : we can resubscribe an observable if it sends error that time
+  - debounce time and distinct until changed opetator :
+  - Subject - a spl type of obserable(subscribe,pipe) as well as observer(next,err,complete) to share data two comps without any relation we can send data to service as well , it provides multicasting as well.
+  - Behaviour Subject - same as Subject except we can set an initial value only in behavior subject not in subject, now we go tto service and write userName = new behaviourSubject<anyType>("Intial value any")
+  - Replay subject -Apart from Behavior Sub which store only one stream forever, Replay subject Store multiple emmited streams for specified time
+  - concat & merge operator : both includes streams but concat finish one source once then next while merge includes the way it get
+  - MergeMap : it's a flattening operator (combination of map + mergeAll operator(don't need to resubscribe)) means it's used to flat nested observable
+  - concatMap : it's also an flattening operator (uses concatAll) and it also maintain its order which make it unique among all flattnening operators
+
 * observable handles(if subscribed)
+
   - Data
   - Error
   - Completion
