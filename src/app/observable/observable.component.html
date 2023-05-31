@@ -19,7 +19,14 @@
   - concat & merge operator : both includes streams but concat finish one source once then next while merge includes the way it get
   - MergeMap : it's a flattening operator (combination of map + mergeAll operator(don't need to resubscribe)) means it's used to flat nested observable
   - concatMap : it's also an flattening operator (uses concatAll) and it also maintain its order which make it unique among all flattnening operators
-
+  - SwitchMap : it's also an flattening operator but diff is that it closed all previous req as well as it get newer one
+  - ExhaustMap : it's known as don't disturb operator, it works only one req at a time and ignore rest of all until its task
+  - ShareReplay : To avoid multiple http request
+  - zip and ForkJoin
+  - Combine latest and with latest from
+  - catch error and throw error 
+* diff between mergeMap , concatMap and SwitchMap :
+mergeMap will flatten and return all streams instantly, concatMap will return with respective order while switchMap will return only last cancelling all earlier
 * observable handles(if subscribed)
 
   - Data

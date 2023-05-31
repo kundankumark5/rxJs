@@ -23,6 +23,10 @@ import { ConcatComponent } from './observable/concat/concat.component';
 import { MergeComponent } from './observable/merge/merge.component';
 import { MergeMapComponent } from './observable/merge-map/merge-map.component';
 import { ConcatMapComponent } from './observable/concat-map/concat-map.component';
+import { SwitchMapComponent } from './observable/switch-map/switch-map.component';
+import { SwitchMapexpComponent } from './observable/switch-mapexp/switch-mapexp.component';
+import { exhaustMap } from 'rxjs';
+import { ExhaustMapComponent } from './observable/exhaust-map/exhaust-map.component';
 const routes: Routes = [
   {
     path: 'promise',
@@ -55,7 +59,10 @@ const routes: Routes = [
       { path: 'concat', component: ConcatComponent },
       { path: 'merge', component: MergeComponent },
       { path: 'mergeMap', component: MergeMapComponent },
-      { path: 'concatMap', component:ConcatMapComponent },
+      { path: 'concatMap', component: ConcatMapComponent },
+      { path: 'SwitchMap', component: SwitchMapComponent },
+      { path: 'SwitchMapExp', component: SwitchMapexpComponent },
+      { path: 'exhaustMap', component: ExhaustMapComponent },
     ],
   },
   { path: '**', redirectTo: 'promise' },
